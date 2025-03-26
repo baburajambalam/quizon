@@ -1,0 +1,27 @@
+Objective:
+Build a UI for a .NET web application using C#.
+
+Framework:
+- **Blazor Server**
+  - Provides rich interactivity with server-side logic.
+  - Uses SignalR for real-time communication.
+  - Keeps all code in one project (similar to classic ASP.NET WebForms).
+
+Project Purpose:
+- **Project Name**: Quizon
+- **Description**: A quiz application with the following features:
+  1. Users log into the application.
+  2. Users upload documents.
+  3. Uploaded documents are stored in the user's profile.
+  4. An AI service processes the documents to generate quizzes.
+  5. Users can navigate to a quiz page by selecting one of their uploaded documents.
+
+Application Features:
+1. **Login Page**:
+   - Users log in using their email as the account identifier.
+   - The application sends a One-Time Password (OTP) to the user's email.
+   - Users must enter the correct OTP to create a session.
+   - Sessions are valid until midnight.
+
+2. **Landing Page**:
+   - Upon successful login, users are redirected to the landing page.
