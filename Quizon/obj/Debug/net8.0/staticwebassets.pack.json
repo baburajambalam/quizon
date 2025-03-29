@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\work-visual-studio\\github\\quizon\\Quizon\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Quizon.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Quizon.wdqs1j8pss.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\work-visual-studio\\github\\quizon\\Quizon\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\work-visual-studio\\github\\quizon\\Quizon\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\work-visual-studio\\github\\quizon\\Quizon\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\work-visual-studio\\github\\quizon\\Quizon\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Quizon.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Quizon.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Quizon.props",
+      "PackagePath": "build\\Quizon.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Quizon.props",
+      "PackagePath": "buildMultiTargeting\\Quizon.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Quizon.props",
+      "PackagePath": "buildTransitive\\Quizon.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

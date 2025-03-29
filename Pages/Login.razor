@@ -1,0 +1,71 @@
+@page "/login"
+@inject NavigationManager Navigation
+@inject HttpClient Http
+@inject IJSRuntime JS
+
+<h3>Login</h3>
+
+<div>
+    <label for="email">Email:</label>
+    <input id="email" type="email" @bind="Email" />
+    <button @onclick="SendOtp">Send OTP</button>
+</div>
+
+@if (OtpSent)
+{
+    <div>
+        <label for="otp">Enter OTP:</label>
+        <input id="otp" type="text" @bind="Otp" />
+        <button @onclick="VerifyOtp">Login</button>
+    </div>
+}
+
+<p>@Message</p>
+
+@code {
+    private string Email { get; set; }
+    private string Otp { get; set; }
+    private bool OtpSent { get; set; }
+    private string Message { get; set; }
+
+    private async Task SendOtp()
+    {
+        try
+        {
+            var response = await Http.PostAsJsonAsync("api/auth/send-otp", new { Email });
+            if (response.IsSuccessStatusCode)
+            {
+                OtpSent = true;
+                Message = "OTP sent to your email.";
+            }
+            else
+            {
+                Message = "Failed to send OTP.";
+            }
+        }
+        catch
+        {
+            Message = "An error occurred.";
+        }
+    }
+
+    private async Task VerifyOtp()
+    {
+        try
+        {
+            var response = await Http.PostAsJsonAsync("api/auth/verify-otp", new { Email, Otp });
+            if (response.IsSuccessStatusCode)
+            {
+                Navigation.NavigateTo("/landing");
+            }
+            else
+            {
+                Message = "Invalid OTP.";
+            }
+        }
+        catch
+        {
+            Message = "An error occurred.";
+        }
+    }
+}
